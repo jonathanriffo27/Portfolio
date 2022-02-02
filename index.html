@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <style type="text/css">
+        html{
+            font-family: montserrat, sans-serif;
+        }
+        .slides img{
+            opacity: 0.75;
+        }
+        .slides{
+            text-shadow: 1px 1px 5px black;
+        } 
+        @media only screen and (min-width: 993px){
+            nav a.sidenav-trigger {
+            display: inline-block;
+            }
+        }
+        .page-footer {
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body class="blue-grey lighten-5 blue-grey-text text-darken-2">
+    <div class="navbar-fixed">
+    <nav class="blue-grey darken-2">
+        <div class="nav-wrapper container">
+            <a href="#" data-target="menu-responsive" class="brand-logo center"><img onclick="llamar();" style="vertical-align: middle;" src="img/LogoMakr-2fiLVX.png" alt=""></a>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger left">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- <ul class="right hide-on-med-and-down">
+                <li><a href="#">Acerca de mi</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li>
+                    <a class="dropdown-trigger" href="#" data-target="id_drop">Dropdown
+                    <i class="material-icons right">arrow_drop_down</i>
+                </a></li>
+            </ul> -->
+        </div>
+        
+        <!-- <ul id="id_drop" class="dropdown-content">
+            <li><a href="#">Acerca de mi</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Contacto</a></li>
+        </ul> -->
+    </nav>
+    </div>
+    <ul class="sidenav blue-grey darken-2 section table-of-contents" id="menu-responsive">
+             <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="img/el_remozado_javascript.imagen.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <img src="img/LogoMakr-9YEcZV.png" class="circle" alt="">
+                    </a>
+                    <a href="#">
+                        <span class="name white-text">Jonathan Riffo</span>
+                    </a>
+                    <a href="#">
+                        <span class="email white-text">jonathan.riffo7@gmail.com</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a class="white-text sidenav-close" href="#sobremi">
+                    <i class="material-icons white-text">cloud</i>
+                    Acerca de mi
+                </a>
+            </li>
+            <li>
+                <a class="white-text sidenav-close" href="#proyectos">
+                    <i class="material-icons white-text">cloud</i>
+                    Proyectos
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a class="white-text sidenav-close" href="#contacto">
+                    <i class="material-icons white-text">cloud</i>
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    <div class="fixed-action-btn">
+        <a href="#" class="btn-floating teal lighten-2 btn-large"><i class="material-icons large">call</i></a>
+        <ul>
+            <li>
+                <a href="#" class="btn-floating"><i class="iconify" data-icon="jam:linkedin-circle" style="color: white;" data-width="38" data-height="38"></i></a>
+            </li>
+            <li>
+                <a href="#" class="btn-floating"><i class="iconify" data-icon="mdi:whatsapp" style="color: white;" data-width="37" data-height="37"></i></a>
+            </li>
+            <li>
+                <a href="#" class="btn-floating"><i class="iconify" data-icon="ant-design:instagram-outlined" style="color: white;" data-width="37" data-height="37"></i></a>
+            </li>
+            <li>
+                <a href="#" class="btn-floating"><i class="iconify" data-icon="feather:mail" style="color: white;" data-width="36" data-height="36"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="">
+        <div class="row container-fluid">
+            <div class="">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/el_remozado_javascript.imagen.jpg" alt="">
+                            <div class="caption center-align">
+                                <h3>Javascripts</h3>
+                                <h5 class="">Lenguaje que permite mejoras en la interfaz de usuario y crea páginas web dinámicas del lado del cleinte</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/html.jpeg" alt="">
+                            <div class="caption right-align">
+                                <h3 class="">HTML</h3>
+                                <h5 class="light">Lenguaje que define la estructura básica y es el estándar que se ha impuesto en la visualización de páginas web </h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/css_blog.png" alt="">
+                            <div class="caption left-align">
+                                <h3>CSS</h3>
+                                <h5 class="light">Lenguaje de diseño gráfico para crear la presentación de los documentos web e interfaces de usuarios</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section"></div>
+    <div class="container section"></div>
+    <div id="sobremi" class="container section scrollspy">
+        <div class="row">
+            <div class="col s12 center">
+                <h4>Acerca de mi</h4>
+                <br>
+                <br>
+                <p class="flow-text">Soy un desarrollador Full Stack en etapa inicial con conocimientos basicos tanto en la administracion interna de una aplicacion (back-end) y la parte visual dirigida al cliente (front-end). Con algunas nociones de diseño web y dominio de los lenguajes JavaScript, CSS (Bootstrap y Materialize) y HTML. Ademas cuento con buenas habilidades de comunicacion efectiva en relacion al trabajo en equipo. </p>
+            </div>
+        </div>
+    </div>
+    <div class="container section"></div>
+    <div id="proyectos" class="container section scrollspy">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h4>Proyectos</h4>
+                <br>
+                <br>
+                <div class="col s4">
+                    <div class="section">
+                        <img src="img/Captura de Pantalla 2022-02-02 a la(s) 08.59.05.png" alt="" class="materialboxed responsive-img" data-caption="Proyecto de adivina el color">
+                        <br>
+                        <a href="https://jonathanriffo27.github.io/ColorGame/" class="btn-small teal lighten-2"><i class="material-icons left">web</i>Visitar</a>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="section">
+                        <img src="img/Captura de Pantalla 2022-02-02 a la(s) 09.01.01.png" alt="" class="materialboxed responsive-img" data-caption="Proyecto de adivina el color">
+                        <br>
+                        <a href="https://jonathanriffo27.github.io/Paginadeportes/" class="btn-small teal lighten-2"><i class="material-icons left">web</i>Visitar</a>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="section">
+                        <img src="img/Captura de Pantalla 2022-02-02 a la(s) 09.02.31.png" alt="" class="materialboxed responsive-img" data-caption="Proyecto de adivina el color">
+                        <br>
+                        <a href="https://jonathanriffo27.github.io/BodegadelJuan/" class="btn-small teal lighten-2"><i class="material-icons left">web</i>Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section"></div>
+    <div class="container section"></div>
+    <div id="contacto" class="container section scrollspy">
+        <div class="row">
+            <div class="col s12 center">
+                <h4>Contacto</h4>
+                <br>
+                <br>
+            </div>
+            <form class="col s12 center">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_box</i>
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Apellido</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telefono</label>
+                    </div>
+                    <div class="col s12">
+                          Escriba su consulta:
+                          <div class="input-field">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Area de texto</label>
+                            <span class="helper-text" data-error="wrong" data-success="right"></span>
+                          </div>
+                    </div> 
+                    <div class="col s12 center">
+                        <a href="" class="btn-small teal lighten-2"><i class="material-icons left">send</i>Enviar</a>
+                    </div>
+                </div> 
+            </form>
+        </div>
+    </div>
+    <footer class="page-footer blue-grey darken-2">
+          <!-- <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+          <div class="footer-copyright">
+            <div class="container">
+            <span>© 2022 Copyright</span>
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            <a href="#" class="right"><i class="iconify" data-icon="jam:linkedin-circle" style="color: white;" data-width="38" data-height="38"></i></a>
+            <a href="#" class="right"><i class="iconify" data-icon="mdi:whatsapp" style="color: white;" data-width="37" data-height="37"></i></a>
+            <a href="#" class="right"><i class="iconify" data-icon="ant-design:instagram-outlined" style="color: white;" data-width="37" data-height="37"></i></a>
+            <a href="#" class="right"><i class="iconify" data-icon="feather:mail" style="color: white;" data-width="37" data-height="37"></i></a>
+            </div>
+          </div>
+        </footer>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+             var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems,{
+                indicators: false
+            });
+             var elems = document.querySelectorAll('.fixed-action-btn');
+             var instances = M.FloatingActionButton.init(elems, {
+              direction: 'left'
+             });
+             var elems = document.querySelectorAll('.scrollspy');
+             var instances = M.ScrollSpy.init(elems,{
+                scrollOffset: 55,
+                activeClass: null
+             });
+            });
+        function llamar(){
+            var instance = M.Sidenav.getInstance(elem)
+            instance.open();
+        }
+    </script>
+</body>
+</html>
